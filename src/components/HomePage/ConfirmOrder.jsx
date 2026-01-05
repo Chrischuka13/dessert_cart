@@ -6,8 +6,7 @@ import { Link, useNavigate } from 'react-router-dom'
 
 const ConfirmOrder = ({show, onClose}) => {
   const navigate = useNavigate()
-  const [setCart] = useState([])
-  const {cartItems} = useContext(CartContext)
+  const {cartItems, setCartItems} = useContext(CartContext)
   const total = cartItems.reduce(
     (sum, item) => sum + item.price * item.quantity, 0
   );
@@ -16,25 +15,20 @@ const ConfirmOrder = ({show, onClose}) => {
   localStorage.setItem("cart", JSON.stringify(cartItems));
 }, [cartItems]);
 
-
   const resetCart = () => {
-  setCart([]);
+  setCartItems([]);
   localStorage.removeItem("cart");
-  
 };
-
 
   if (!show) return null;
 
 
-
-
   return (
-    <div className='p-6 fixed inset-0 bg-black/40 backdrop-blur-sm flex items-center justify-center z-50'>
-        <div className='md:max-w-125 md:px-6 bg-white p-6 rounded-2xl'>
-        <img src="/images/icon-order-confirmed.svg" alt="" />
-        <h1 className='text-[30px] font-bold'>Order Confirmed</h1>
-        <p className='text-[14px] mb-4'>We hope you enjoy your food!</p>
+    <div className='p-6 fixed inset-0 bg-black/40 backdrop-blur-sm flex flex-col items-center h-screen overflow-y-auto'>
+        <div className=' bg-white p-6 rounded-2xl'>
+          <img src="/images/icon-order-confirmed.svg" alt="" />
+          <h1 className='text-[30px] font-bold'>Order Confirmed</h1>
+          <p className='text-[14px] mb-4'>We hope you enjoy your food!</p>
 
           {cartItems.map(item => (
               //display cart data
@@ -70,13 +64,7 @@ const ConfirmOrder = ({show, onClose}) => {
                 <span className='font-bold text-[28px]'>${total.toFixed(2)}</span>
             </div>
 
-            <button onClick={resetCart} className='bg-amber-700 text-white p-3 w-full rounded-4xl hover:cursor-pointer hover:bg-amber-600'><Link to='/' className='text-[16px]'>Start New Order</Link></button>
-            <div className='flex justify-center items-center'>
-              <button onClick={onClose} className="mt-6 text-gray-500 hover:text-gray-700 text-sm">
-          Close
-        </button>
-            </div>
-            
+            <button onClick={()=> {onClose(), resetCart()}} className='bg-amber-700 text-white p-3 w-full rounded-4xl hover:cursor-pointer hover:bg-amber-600 mt-6'>Start New Order</button>
             
         </div>
 
