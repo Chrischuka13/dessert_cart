@@ -34,7 +34,7 @@ const Home = () => {
             <nav className='py-6'>
                 <h1 className='text-[36px] font-semibold'>Dessert</h1>
             </nav>
-            <div className='hidden md:block bg-amber-400 max-w-[200px] p-2'>
+            <div className='hidden md:block bg-amber-400 max-w-50 p-2'>
                 <p className='text-amber-700'>More Than Delicious</p>
             </div>
             
