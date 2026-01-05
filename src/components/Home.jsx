@@ -51,8 +51,8 @@ const Home = () => {
                 </div>
                
                 <div className='md:w-1/2'>
-                    <img src="./public/images/hero_mobile.jpg" alt="" className='block md:hidden rounded-2xl'/>
-                    <img src="./public/images/hero_web.jpg" alt="" className='hidden md:block md:rounded-2xl w-full h-full object-cover'/>
+                    <img src="/images/hero_mobile.jpg" alt="" className='block md:hidden rounded-2xl'/>
+                    <img src="/images/hero_web.jpg" alt="" className='hidden md:block md:rounded-2xl w-full h-full object-cover'/>
                 </div>
                 
             </div>

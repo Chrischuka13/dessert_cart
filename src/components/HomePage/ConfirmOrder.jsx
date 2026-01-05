@@ -32,7 +32,7 @@ const ConfirmOrder = ({show, onClose}) => {
   return (
     <div className='p-6 fixed inset-0 bg-black/40 backdrop-blur-sm flex items-center justify-center z-50'>
         <div className='md:max-w-125 md:px-6 bg-white p-6 rounded-2xl'>
-        <img src="./assets/images/icon-order-confirmed.svg" alt="" />
+        <img src="/images/icon-order-confirmed.svg" alt="" />
         <h1 className='text-[30px] font-bold'>Order Confirmed</h1>
         <p className='text-[14px] mb-4'>We hope you enjoy your food!</p>
 
