@@ -45,7 +45,7 @@ const Home = () => {
 
                     <div className='md:flex md:space-x-8 mt-8'>
                         <button className='bg-amber-700 text-white p-4 w-full rounded-2xl hover:cursor-pointer hover:bg-amber-600 text-[18px]'><Link to="/orders">Order Now</Link></button>
-                        <a href="./assets/video/8870623-hd_1920_1080_25fps.mp4" target='_blank' className='flex justify-center items-center gap-4 = font-semibold bg-none text-black p-4 w-full rounded-2xl hover:cursor-pointer hover:bg-amber-100 my-6 md:my-0'><img src="./public/images/play-button.svg" alt="" className='w-7' />Watch Video</a>
+                        <a href="/video/8870623-hd_1920_1080_25fps.mp4" target='_blank' className='flex justify-center items-center gap-4 = font-semibold bg-none text-black p-4 w-full rounded-2xl hover:cursor-pointer hover:bg-amber-100 my-6 md:my-0'><img src="/images/play-button.svg" alt="" className='w-7' />Watch Video</a>
                     </div>
                     
                 </div>

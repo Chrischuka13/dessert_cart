@@ -97,7 +97,7 @@ const HomePage = () => {
 
             {/* <input type="phone" id='phone' value={phone} onChange={(event) => setPhone(event.target.value)} disabled={cartItems.length === 0} maxLength={11} className='p-2 border rounded-lg mb-4 focus:outline-none focus:border-amber-700 w-full' placeholder='add phonenumber'/>  */}
 
-            <div className='p-4 mb-4 bg-amber-50 rounded-2xl'><span className='flex justify-center items-center gap-2 text-[16px]'><img src="./public/images/icon-carbon-neutral.svg" />This is a carbon-neutral delivery</span></div>
+            <div className='p-4 mb-4 bg-amber-50 rounded-2xl'><span className='flex justify-center items-center gap-2 text-[16px]'><img src="/images/icon-carbon-neutral.svg" />This is a carbon-neutral delivery</span></div>
             <button onClick={onSubmit} disabled={cartItems.length === 0} className={` text-white p-3 w-full rounded-4xl hover:cursor-pointer ${cartItems.length === 0 ? "bg-gray-300 text-gray-500 cursor-not-allowed" : "bg-amber-700 text-white hover:bg-amber-600"}`}>Confirm Order</button> 
         </div>
     </div>
