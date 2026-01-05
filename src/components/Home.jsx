@@ -45,17 +45,14 @@ const Home = () => {
 
                     <div className='md:flex md:space-x-8 mt-8'>
                         <button className='bg-amber-700 text-white p-4 w-full rounded-2xl hover:cursor-pointer hover:bg-amber-600 text-[18px]'><Link to="/orders">Order Now</Link></button>
-                        <a href="./assets/video/8870623-hd_1920_1080_25fps.mp4" target='_blank' className='flex justify-center items-center gap-4 = font-semibold bg-none text-black p-4 w-full rounded-2xl hover:cursor-pointer hover:bg-amber-100 my-6 md:my-0'><img src="./assets/images/play-button.svg" alt="" className='w-7' />Watch Video</a>
-
-                        
-
+                        <a href="./assets/video/8870623-hd_1920_1080_25fps.mp4" target='_blank' className='flex justify-center items-center gap-4 = font-semibold bg-none text-black p-4 w-full rounded-2xl hover:cursor-pointer hover:bg-amber-100 my-6 md:my-0'><img src="./public/images/play-button.svg" alt="" className='w-7' />Watch Video</a>
                     </div>
                     
                 </div>
                
                 <div className='md:w-1/2'>
-                    <img src="./assets/images/hero_mobile.jpg" alt="" className='block md:hidden rounded-2xl'/>
-                    <img src="./assets/images/hero_web.jpg" alt="" className='hidden md:block md:rounded-2xl w-full h-full object-cover'/>
+                    <img src="./public/images/hero_mobile.jpg" alt="" className='block md:hidden rounded-2xl'/>
+                    <img src="./public/images/hero_web.jpg" alt="" className='hidden md:block md:rounded-2xl w-full h-full object-cover'/>
                 </div>
                 
             </div>

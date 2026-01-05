@@ -53,7 +53,7 @@ const HomePage = () => {
                 <img src={item.image.tablet} alt="" className='hidden md:block lg:hidden rounded-2xl'/>
                 <img src={item.image.desktop} alt="" className='hidden md:hidden lg:block rounded-2xl'/>
 
-                <button onClick={() => addToCart(item)} className='absolute inset-0 m-auto flex justify-center items-center mb-20 sm:mb-30 h-fit w-fit rounded-full border border-gray-500 bg-white px-5 py-2 text-sm font-medium text-gray-700 shadow-md hover:cursor-pointer hover:bg-amber-600 hover:text-white hover:border-none' data-product-name={item.name}><span className='flex gap-2'><img src="./assets/images/icon-add-to-cart.svg" alt="" />Add to Cart</span></button>
+                <button onClick={() => addToCart(item)} className='absolute inset-0 m-auto flex justify-center items-center mb-20 sm:mb-30 h-fit w-fit rounded-full border border-gray-500 bg-white px-5 py-2 text-sm font-medium text-gray-700 shadow-md hover:cursor-pointer hover:bg-amber-600 hover:text-white hover:border-none' data-product-name={item.name}><span className='flex gap-2'><img src="./public/images/icon-add-to-cart.svg" alt="" />Add to Cart</span></button>
                 
                 <p className='text-[16px] text-gray-600 mt-6'>{item.category}</p>
                 <p className='font-semibold text-[18px]'>{item.name}</p>
@@ -80,7 +80,7 @@ const HomePage = () => {
                       </div>
                         
                       <div className=''>
-                        <button className='' onClick={() => removeFromCart(items.id)}> <img src="./assets/images/icon-remove-item.svg" alt="" className='w-4 hover:cursor-pointer' /> </button>
+                        <button className='' onClick={() => removeFromCart(items.id)}> <img src="./public/images/icon-remove-item.svg" alt="" className='w-4 hover:cursor-pointer' /> </button>
                       </div>
                     </div>  
                     
@@ -97,7 +97,7 @@ const HomePage = () => {
 
             {/* <input type="phone" id='phone' value={phone} onChange={(event) => setPhone(event.target.value)} disabled={cartItems.length === 0} maxLength={11} className='p-2 border rounded-lg mb-4 focus:outline-none focus:border-amber-700 w-full' placeholder='add phonenumber'/>  */}
 
-            <div className='p-4 mb-4 bg-amber-50 rounded-2xl'><span className='flex justify-center items-center gap-2 text-[16px]'><img src="./assets/images/icon-carbon-neutral.svg" />This is a carbon-neutral delivery</span></div>
+            <div className='p-4 mb-4 bg-amber-50 rounded-2xl'><span className='flex justify-center items-center gap-2 text-[16px]'><img src="./public/images/icon-carbon-neutral.svg" />This is a carbon-neutral delivery</span></div>
             <button onClick={onSubmit} disabled={cartItems.length === 0} className={` text-white p-3 w-full rounded-4xl hover:cursor-pointer ${cartItems.length === 0 ? "bg-gray-300 text-gray-500 cursor-not-allowed" : "bg-amber-700 text-white hover:bg-amber-600"}`}>Confirm Order</button> 
         </div>
     </div>
